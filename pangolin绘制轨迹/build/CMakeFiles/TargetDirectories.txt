@@ -1,0 +1,3 @@
+/home/gky/gky_depository/projects/pangolin绘制轨迹/build/CMakeFiles/rebuild_cache.dir
+/home/gky/gky_depository/projects/pangolin绘制轨迹/build/CMakeFiles/plotTrajectory.dir
+/home/gky/gky_depository/projects/pangolin绘制轨迹/build/CMakeFiles/edit_cache.dir
