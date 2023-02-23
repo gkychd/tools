@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/20HK.dir/compute20HK.cpp.o  -o 20HK 

@@ -1,0 +1,24 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+        // for the documentation about the tasks.json format
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "type": "shell",    // 任务执行的是shell命令
+                "label": "g++ build active file",   // 任务的名字叫Build，注意是大小写区分的
+                "command": "/usr/bin/g++",   // 命令是g++
+                "args": [
+                    "-g",
+                    "${file}",      // 当前文件名,编译调试的时候要切换到对应的cpp文件下F5
+                    "-o",           // 对象名，不进行编译优化
+                    "${workspaceFolder}/${fileBasenameNoExtension}.out",  //当前文件名（去掉扩展名）
+                ],
+                "options": {
+                    "cwd": "/usr/bin"
+                },
+                "problemMatcher": [
+                    "$gcc"          // 使用gcc捕获错误
+                ]
+            }
+        ]
+    }

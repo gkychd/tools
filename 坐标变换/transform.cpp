@@ -21,9 +21,9 @@ int main(int argc, char **argv){
     tbc2 << 0.074, 0.0061, -0.016;
     tbw << 0.015, 0.039, 0.2017;
     //Eigen::Matrix3d rotation_matrix = Eigen::Matrix3d::Identity();
-    R << 0,0, 1,
-            -1, 0, 0,
-            0, -1, 0;
+    R << 0,-1, 0,
+            0, 0, -1,
+            1, 0, 0;
     Rbc1 << 0.99997637,  0.0041976, 0.00544467,
            0.00419222, -0.99999071,  0.00099798,
            0.00544881, -0.00097513, -0.99998468;
@@ -60,4 +60,5 @@ int main(int argc, char **argv){
     cout << "Rbc2 -> yaw、pitch、roll：" << euler_angles2.transpose() << endl;
     cout << "Rwc -> yaw、pitch、roll：" << euler_angles3.transpose() << endl;
     cout << "Rbw -> yaw、pitch、roll：" << euler_angles4.transpose() << endl;
+
 }

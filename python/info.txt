@@ -1,0 +1,9 @@
+python脚本
+将点云pcd文件从binary 转化为 ascii
+或           从 ascii 转化为 binary格式
+
+python pcd_convert.py input.pcd output.pcd
+报错 
+1. pip install python-pcl
+2. pcl和ubuntu18.04版本冲突
+https://blog.csdn.net/qq_41035283/article/details/120047090 

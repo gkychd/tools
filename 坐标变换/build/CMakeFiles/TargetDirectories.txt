@@ -1,3 +1,6 @@
-/home/gky/gky_depository/projects/坐标变换/build/CMakeFiles/rebuild_cache.dir
-/home/gky/gky_depository/projects/坐标变换/build/CMakeFiles/transform.dir
-/home/gky/gky_depository/projects/坐标变换/build/CMakeFiles/edit_cache.dir
+/home/gky/tools/tools/坐标变换/build/CMakeFiles/rebuild_cache.dir
+/home/gky/tools/tools/坐标变换/build/CMakeFiles/edit_cache.dir
+/home/gky/tools/tools/坐标变换/build/CMakeFiles/20HK.dir
+/home/gky/tools/tools/坐标变换/build/CMakeFiles/transform.dir
+/home/gky/tools/tools/坐标变换/build/CMakeFiles/computeTbi.dir
+/home/gky/tools/tools/坐标变换/build/CMakeFiles/nclt_lidar2imu.dir

@@ -1,4 +1,4 @@
-# Install script for directory: /home/gky/gky_depository/projects/坐标变换
+# Install script for directory: /home/gky/tools/tools/坐标变换
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gky/gky_depository/projects/坐标变换/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gky/tools/tools/坐标变换/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

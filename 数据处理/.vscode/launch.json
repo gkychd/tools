@@ -1,0 +1,32 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+        // 悬停以查看现有属性的描述。
+        // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": 
+        [
+            {
+                "name": "(gdb) Launch",// 配置名称，将会在启动配置的下拉菜单中显示
+                "type": "cppdbg",// 配置类型，这里只能为cppdbg
+                "request": "launch",// 请求配置类型，可以为launch（启动）或attach（附加）
+                "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",// 将要进行调试的程序的路径
+                // 标注:${workspaceFolder}为工作空间文件夹,${fileBasenameNoExtension}为当前打开的文件的文件名，不包括路径和后缀名
+                "preLaunchTask": "g++ build active file",// 手动添加一项参数（注意不要落下逗号）,这指的是在调试前要预先执行的任务,有了这个参数,F5的时候就会自动弹出生成task.json的提示
+                "args": [],// 程序调试时传递给程序的命令行参数，一般设为空即可
+                "stopAtEntry": false,// 设为true时程序将暂停在程序入口处，我一般设置为true
+                "cwd": "${workspaceFolder}",// 调试程序时的工作目录
+                "environment": [],
+                "externalConsole": true,// 调试时是否显示控制台窗口，一般设置为true显示控制台
+                "MIMode": "gdb",// 指定连接的调试器，可以为gdb或lldb。但目前lldb在windows下没有预编译好的版本。
+                "miDebuggerArgs": "-q -ex quit; wait() { fg >/dev/null; }; /usr/bin/gdb -q --interpreter=mi",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+    
+            }
+        ]
+    }

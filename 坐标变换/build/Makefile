@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gky/gky_depository/projects/坐标变换
+CMAKE_SOURCE_DIR = /home/gky/tools/tools/坐标变换
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gky/gky_depository/projects/坐标变换/build
+CMAKE_BINARY_DIR = /home/gky/tools/tools/坐标变换/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gky/gky_depository/projects/坐标变换/build/CMakeFiles /home/gky/gky_depository/projects/坐标变换/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gky/tools/tools/坐标变换/build/CMakeFiles /home/gky/tools/tools/坐标变换/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gky/gky_depository/projects/坐标变换/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gky/tools/tools/坐标变换/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 20HK
+
+# Build rule for target.
+20HK: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 20HK
+.PHONY : 20HK
+
+# fast build rule for target.
+20HK/fast:
+	$(MAKE) -f CMakeFiles/20HK.dir/build.make CMakeFiles/20HK.dir/build
+.PHONY : 20HK/fast
+
+#=============================================================================
 # Target rules for targets named transform
 
 # Build rule for target.
@@ -122,6 +135,113 @@ transform: cmake_check_build_system
 transform/fast:
 	$(MAKE) -f CMakeFiles/transform.dir/build.make CMakeFiles/transform.dir/build
 .PHONY : transform/fast
+
+#=============================================================================
+# Target rules for targets named computeTbi
+
+# Build rule for target.
+computeTbi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 computeTbi
+.PHONY : computeTbi
+
+# fast build rule for target.
+computeTbi/fast:
+	$(MAKE) -f CMakeFiles/computeTbi.dir/build.make CMakeFiles/computeTbi.dir/build
+.PHONY : computeTbi/fast
+
+#=============================================================================
+# Target rules for targets named nclt_lidar2imu
+
+# Build rule for target.
+nclt_lidar2imu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nclt_lidar2imu
+.PHONY : nclt_lidar2imu
+
+# fast build rule for target.
+nclt_lidar2imu/fast:
+	$(MAKE) -f CMakeFiles/nclt_lidar2imu.dir/build.make CMakeFiles/nclt_lidar2imu.dir/build
+.PHONY : nclt_lidar2imu/fast
+
+compute20HK.o: compute20HK.cpp.o
+
+.PHONY : compute20HK.o
+
+# target to build an object file
+compute20HK.cpp.o:
+	$(MAKE) -f CMakeFiles/20HK.dir/build.make CMakeFiles/20HK.dir/compute20HK.cpp.o
+.PHONY : compute20HK.cpp.o
+
+compute20HK.i: compute20HK.cpp.i
+
+.PHONY : compute20HK.i
+
+# target to preprocess a source file
+compute20HK.cpp.i:
+	$(MAKE) -f CMakeFiles/20HK.dir/build.make CMakeFiles/20HK.dir/compute20HK.cpp.i
+.PHONY : compute20HK.cpp.i
+
+compute20HK.s: compute20HK.cpp.s
+
+.PHONY : compute20HK.s
+
+# target to generate assembly for a file
+compute20HK.cpp.s:
+	$(MAKE) -f CMakeFiles/20HK.dir/build.make CMakeFiles/20HK.dir/compute20HK.cpp.s
+.PHONY : compute20HK.cpp.s
+
+computeTbi.o: computeTbi.cpp.o
+
+.PHONY : computeTbi.o
+
+# target to build an object file
+computeTbi.cpp.o:
+	$(MAKE) -f CMakeFiles/computeTbi.dir/build.make CMakeFiles/computeTbi.dir/computeTbi.cpp.o
+.PHONY : computeTbi.cpp.o
+
+computeTbi.i: computeTbi.cpp.i
+
+.PHONY : computeTbi.i
+
+# target to preprocess a source file
+computeTbi.cpp.i:
+	$(MAKE) -f CMakeFiles/computeTbi.dir/build.make CMakeFiles/computeTbi.dir/computeTbi.cpp.i
+.PHONY : computeTbi.cpp.i
+
+computeTbi.s: computeTbi.cpp.s
+
+.PHONY : computeTbi.s
+
+# target to generate assembly for a file
+computeTbi.cpp.s:
+	$(MAKE) -f CMakeFiles/computeTbi.dir/build.make CMakeFiles/computeTbi.dir/computeTbi.cpp.s
+.PHONY : computeTbi.cpp.s
+
+nclt_lidar2imu.o: nclt_lidar2imu.cpp.o
+
+.PHONY : nclt_lidar2imu.o
+
+# target to build an object file
+nclt_lidar2imu.cpp.o:
+	$(MAKE) -f CMakeFiles/nclt_lidar2imu.dir/build.make CMakeFiles/nclt_lidar2imu.dir/nclt_lidar2imu.cpp.o
+.PHONY : nclt_lidar2imu.cpp.o
+
+nclt_lidar2imu.i: nclt_lidar2imu.cpp.i
+
+.PHONY : nclt_lidar2imu.i
+
+# target to preprocess a source file
+nclt_lidar2imu.cpp.i:
+	$(MAKE) -f CMakeFiles/nclt_lidar2imu.dir/build.make CMakeFiles/nclt_lidar2imu.dir/nclt_lidar2imu.cpp.i
+.PHONY : nclt_lidar2imu.cpp.i
+
+nclt_lidar2imu.s: nclt_lidar2imu.cpp.s
+
+.PHONY : nclt_lidar2imu.s
+
+# target to generate assembly for a file
+nclt_lidar2imu.cpp.s:
+	$(MAKE) -f CMakeFiles/nclt_lidar2imu.dir/build.make CMakeFiles/nclt_lidar2imu.dir/nclt_lidar2imu.cpp.s
+.PHONY : nclt_lidar2imu.cpp.s
 
 transform.o: transform.cpp.o
 
@@ -157,8 +277,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... transform"
 	@echo "... edit_cache"
+	@echo "... 20HK"
+	@echo "... transform"
+	@echo "... computeTbi"
+	@echo "... nclt_lidar2imu"
+	@echo "... compute20HK.o"
+	@echo "... compute20HK.i"
+	@echo "... compute20HK.s"
+	@echo "... computeTbi.o"
+	@echo "... computeTbi.i"
+	@echo "... computeTbi.s"
+	@echo "... nclt_lidar2imu.o"
+	@echo "... nclt_lidar2imu.i"
+	@echo "... nclt_lidar2imu.s"
 	@echo "... transform.o"
 	@echo "... transform.i"
 	@echo "... transform.s"

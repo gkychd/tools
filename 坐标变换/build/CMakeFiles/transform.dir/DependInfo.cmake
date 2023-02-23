@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gky/gky_depository/projects/坐标变换/transform.cpp" "/home/gky/gky_depository/projects/坐标变换/build/CMakeFiles/transform.dir/transform.cpp.o"
+  "/home/gky/tools/tools/坐标变换/transform.cpp" "/home/gky/tools/tools/坐标变换/build/CMakeFiles/transform.dir/transform.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

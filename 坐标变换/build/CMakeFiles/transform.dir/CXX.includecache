@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gky/gky_depository/projects/坐标变换/transform.cpp
+/home/gky/tools/tools/坐标变换/transform.cpp
 iostream
 -
 cmath
